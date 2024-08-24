@@ -1,37 +1,22 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"64 ./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h
-[; ;./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h: 64: {
+"65 ./MCAL_layer/GPIO/hal_gpio.h
 [s S272 :3 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S272 . port pin_num direction logic ]
-"12 apllication.c
-[; ;apllication.c: 12: Pin_config led_1={.port = PORTC_INDEX, .logic =high , .pin_num= PIN0 ,.direction = Output};
-[c E2768 0 1 2 3 4 .. ]
-[n E2768 . PORTA_INDEX PORTB_INDEX PORTC_INDEX PORTD_INDEX PORTE_INDEX  ]
-[c E2758 0 1 2 3 4 5 6 7 .. ]
-[n E2758 . PIN0 PIN1 PIN2 PIN3 PIN4 PIN5 PIN6 PIN7  ]
-[c E2754 0 1 .. ]
-[n E2754 . Output input  ]
-[c E2750 0 1 .. ]
-[n E2750 . low high  ]
+"11 apllication.c
+[; ;apllication.c: 11: Pin_config pin1={.direction = Output ,.logic =high ,.pin_num = PIN0 ,.port = PORTC_INDEX};
+[c E2832 0 1 2 3 4 .. ]
+[n E2832 . PORTA_INDEX PORTB_INDEX PORTC_INDEX PORTD_INDEX PORTE_INDEX  ]
+[c E2822 0 1 2 3 4 5 6 7 .. ]
+[n E2822 . PIN0 PIN1 PIN2 PIN3 PIN4 PIN5 PIN6 PIN7  ]
+[c E2818 0 1 .. ]
+[n E2818 . Output input  ]
+[c E2814 0 1 .. ]
+[n E2814 . low high  ]
 [p mainexit ]
-"73 ./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h
-[; ;./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h: 73: STD_TeturnType gpio_pin_direction_init (const Pin_config *_PIN_);
+"74 ./MCAL_layer/GPIO/hal_gpio.h
 [v _gpio_pin_direction_init `(uc ~T0 @X0 0 ef1`*CS272 ]
 "77
-[; ;./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h: 77: STD_TeturnType gpio_pin_read_logic(const Pin_config *_PIN_,Logic_t *logic);
-[v _gpio_pin_read_logic `(uc ~T0 @X0 0 ef2`*CS272`*E2750 ]
-"13 ./application.h
-[; ;./application.h: 13: void init(void);
-[v _init `(v ~T0 @X0 0 ef ]
-"14
-[; ;./application.h: 14: void init2(void);
-[v _init2 `(v ~T0 @X0 0 ef ]
-"80 ./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h
-[; ;./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h: 80: STD_TeturnType gpio_port_direction_init (PORT_INDEX_T _PORT_,uint8 direction);
-[v _gpio_port_direction_init `(uc ~T0 @X0 0 ef2`E2768`uc ]
-"76
-[; ;./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h: 76: STD_TeturnType gpio_pin_write_logic(const Pin_config *_PIN_,Logic_t logic);
-[v _gpio_pin_write_logic `(uc ~T0 @X0 0 ef2`*CS272`E2750 ]
+[v _gpio_pin_write_logic `(uc ~T0 @X0 0 ef2`*CS272`E2814 ]
 "54 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4620.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4620.h: 54: __asm("PORTA equ 0F80h");
 [; <" PORTA equ 0F80h ;# ">
@@ -443,311 +428,35 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6715
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4620.h: 6715: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"12 apllication.c
-[; ;apllication.c: 12: Pin_config led_1={.port = PORTC_INDEX, .logic =high , .pin_num= PIN0 ,.direction = Output};
-[v _led_1 `S272 ~T0 @X0 1 e ]
-[i _led_1
+"11 apllication.c
+[; ;apllication.c: 11: Pin_config pin1={.direction = Output ,.logic =high ,.pin_num = PIN0 ,.port = PORTC_INDEX};
+[v _pin1 `S272 ~T0 @X0 1 e ]
+[i _pin1
 :U ..
 :U ..
--> . `E2768 2 `uc
--> . `E2758 0 `uc
--> . `E2754 0 `uc
--> . `E2750 1 `uc
+-> . `E2832 2 `uc
+-> . `E2822 0 `uc
+-> . `E2818 0 `uc
+-> . `E2814 1 `uc
 ..
 ..
-]
-"13
-[; ;apllication.c: 13: Pin_config led_2={.port = PORTC_INDEX, .logic =high , .pin_num= PIN1 ,.direction = Output};
-[v _led_2 `S272 ~T0 @X0 1 e ]
-[i _led_2
-:U ..
-:U ..
--> . `E2768 2 `uc
--> . `E2758 1 `uc
--> . `E2754 0 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"14
-[; ;apllication.c: 14: Pin_config led_3={.port = PORTC_INDEX, .logic =high , .pin_num = PIN2 ,.direction = Output};
-[v _led_3 `S272 ~T0 @X0 1 e ]
-[i _led_3
-:U ..
-:U ..
--> . `E2768 2 `uc
--> . `E2758 2 `uc
--> . `E2754 0 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"15
-[; ;apllication.c: 15: Pin_config led_4={.port = PORTC_INDEX, .logic =high , .pin_num = PIN3 ,.direction = Output};
-[v _led_4 `S272 ~T0 @X0 1 e ]
-[i _led_4
-:U ..
-:U ..
--> . `E2768 2 `uc
--> . `E2758 3 `uc
--> . `E2754 0 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"16
-[; ;apllication.c: 16: Pin_config led_5={.port = PORTC_INDEX, .logic =high , .pin_num = PIN4 ,.direction = Output};
-[v _led_5 `S272 ~T0 @X0 1 e ]
-[i _led_5
-:U ..
-:U ..
--> . `E2768 2 `uc
--> . `E2758 4 `uc
--> . `E2754 0 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"17
-[; ;apllication.c: 17: Pin_config led_6={.port = PORTC_INDEX, .logic =high , .pin_num = PIN5 ,.direction = Output};
-[v _led_6 `S272 ~T0 @X0 1 e ]
-[i _led_6
-:U ..
-:U ..
--> . `E2768 2 `uc
--> . `E2758 5 `uc
--> . `E2754 0 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"18
-[; ;apllication.c: 18: Pin_config led_7={.port = PORTC_INDEX, .logic =high , .pin_num = PIN6 ,.direction = Output};
-[v _led_7 `S272 ~T0 @X0 1 e ]
-[i _led_7
-:U ..
-:U ..
--> . `E2768 2 `uc
--> . `E2758 6 `uc
--> . `E2754 0 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"19
-[; ;apllication.c: 19: Pin_config led_8={.port = PORTC_INDEX, .logic =high , .pin_num = PIN7 ,.direction = Output};
-[v _led_8 `S272 ~T0 @X0 1 e ]
-[i _led_8
-:U ..
-:U ..
--> . `E2768 2 `uc
--> . `E2758 7 `uc
--> . `E2754 0 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"21
-[; ;apllication.c: 21: Pin_config btn_1 ={.port = PORTD_INDEX, .logic =high, .pin_num = PIN0 ,.direction = input};
-[v _btn_1 `S272 ~T0 @X0 1 e ]
-[i _btn_1
-:U ..
-:U ..
--> . `E2768 3 `uc
--> . `E2758 0 `uc
--> . `E2754 1 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"22
-[; ;apllication.c: 22: Pin_config btn_2 ={.port = PORTD_INDEX, .logic =high, .pin_num = PIN1 ,.direction = input};
-[v _btn_2 `S272 ~T0 @X0 1 e ]
-[i _btn_2
-:U ..
-:U ..
--> . `E2768 3 `uc
--> . `E2758 1 `uc
--> . `E2754 1 `uc
--> . `E2750 1 `uc
-..
-..
-]
-"23
-[; ;apllication.c: 23: Logic_t state;
-[v _state `E2750 ~T0 @X0 1 e ]
-"24
-[; ;apllication.c: 24: Logic_t state1;
-[v _state1 `E2750 ~T0 @X0 1 e ]
-"25
-[; ;apllication.c: 25: STD_TeturnType ret = (STD_TeturnType)0x00;
-[v _ret `uc ~T0 @X0 1 e ]
-[i _ret
--> -> 0 `i `uc
-]
-"26
-[; ;apllication.c: 26: uint8 counter = 0;
-[v _counter `uc ~T0 @X0 1 e ]
-[i _counter
--> -> 0 `i `uc
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"27
-[; ;apllication.c: 27: int main()
-[v _main `(i ~T0 @X0 1 ef ]
-"28
-[; ;apllication.c: 28: {
+"12
+[; ;apllication.c: 12: void main()
+[v _main `(v ~T0 @X0 1 ef ]
+"13
+[; ;apllication.c: 13: {
 {
 [e :U _main ]
 [f ]
-"29
-[; ;apllication.c: 29:     gpio_pin_direction_init(&btn_1);
-[e ( _gpio_pin_direction_init (1 -> &U _btn_1 `*CS272 ]
-"30
-[; ;apllication.c: 30:     gpio_pin_direction_init(&btn_2);
-[e ( _gpio_pin_direction_init (1 -> &U _btn_2 `*CS272 ]
-"31
-[; ;apllication.c: 31:     while(1)
-[e :U 275 ]
-"32
-[; ;apllication.c: 32:     {
-{
-"33
-[; ;apllication.c: 33:         gpio_pin_read_logic(&btn_1 ,&state);
-[e ( _gpio_pin_read_logic (2 , -> &U _btn_1 `*CS272 &U _state ]
-"34
-[; ;apllication.c: 34:         gpio_pin_read_logic(&btn_2 ,&state1);
-[e ( _gpio_pin_read_logic (2 , -> &U _btn_2 `*CS272 &U _state1 ]
-"35
-[; ;apllication.c: 35:         if(state == 1)
-[e $ ! == -> _state `ui -> -> 1 `i `ui 277  ]
-"36
-[; ;apllication.c: 36:         {
-{
-"37
-[; ;apllication.c: 37:             init();
-[e ( _init ..  ]
-"38
-[; ;apllication.c: 38:         }
-}
-[e $U 278  ]
-"39
-[; ;apllication.c: 39:         else if(state1 == 1)
-[e :U 277 ]
-[e $ ! == -> _state1 `ui -> -> 1 `i `ui 279  ]
-"40
-[; ;apllication.c: 40:         {
-{
-"41
-[; ;apllication.c: 41:             init2();
-[e ( _init2 ..  ]
-"42
-[; ;apllication.c: 42:         }
-}
-[e $U 280  ]
-"43
-[; ;apllication.c: 43:         else
-[e :U 279 ]
-"44
-[; ;apllication.c: 44:         {
-{
-"45
-[; ;apllication.c: 45:            gpio_port_direction_init(PORTC_INDEX,0xFF);
-[e ( _gpio_port_direction_init (2 , . `E2768 2 -> -> 255 `i `uc ]
-"46
-[; ;apllication.c: 46:         }
-}
-[e :U 280 ]
-[e :U 278 ]
-"48
-[; ;apllication.c: 48:     }
-}
-[e :U 274 ]
-[e $U 275  ]
-[e :U 276 ]
-"52
-[; ;apllication.c: 52:     return (0);
-[e ) -> 0 `i ]
-[e $UE 273  ]
-"53
-[; ;apllication.c: 53: }
-[e :UE 273 ]
-}
-"55
-[; ;apllication.c: 55: void init(void)
-[v _init `(v ~T0 @X0 1 ef ]
-"56
-[; ;apllication.c: 56: {
-{
-[e :U _init ]
-[f ]
-"57
-[; ;apllication.c: 57:     gpio_port_direction_init(PORTC_INDEX,0x00);
-[e ( _gpio_port_direction_init (2 , . `E2768 2 -> -> 0 `i `uc ]
-"58
-[; ;apllication.c: 58:     gpio_pin_write_logic(&led_1,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_1 `*CS272 . `E2750 1 ]
-"59
-[; ;apllication.c: 59:     gpio_pin_write_logic(&led_2,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_2 `*CS272 . `E2750 1 ]
-"60
-[; ;apllication.c: 60:     gpio_pin_write_logic(&led_3,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_3 `*CS272 . `E2750 1 ]
-"61
-[; ;apllication.c: 61:     gpio_pin_write_logic(&led_4,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_4 `*CS272 . `E2750 1 ]
-"62
-[; ;apllication.c: 62:     gpio_pin_write_logic(&led_5,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_5 `*CS272 . `E2750 1 ]
-"63
-[; ;apllication.c: 63:     gpio_pin_write_logic(&led_6,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_6 `*CS272 . `E2750 1 ]
-"64
-[; ;apllication.c: 64:     gpio_pin_write_logic(&led_7,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_7 `*CS272 . `E2750 1 ]
-"65
-[; ;apllication.c: 65:     gpio_pin_write_logic(&led_8,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_8 `*CS272 . `E2750 1 ]
-"66
-[; ;apllication.c: 66: }
-[e :UE 281 ]
-}
-"67
-[; ;apllication.c: 67: void init2(void)
-[v _init2 `(v ~T0 @X0 1 ef ]
-"68
-[; ;apllication.c: 68: {
-{
-[e :U _init2 ]
-[f ]
-"69
-[; ;apllication.c: 69:     gpio_port_direction_init(PORTC_INDEX,0xAA);
-[e ( _gpio_port_direction_init (2 , . `E2768 2 -> -> 170 `i `uc ]
-"70
-[; ;apllication.c: 70:     gpio_pin_write_logic(&led_1,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_1 `*CS272 . `E2750 1 ]
-"71
-[; ;apllication.c: 71:     gpio_pin_write_logic(&led_2,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_2 `*CS272 . `E2750 1 ]
-"72
-[; ;apllication.c: 72:     gpio_pin_write_logic(&led_3,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_3 `*CS272 . `E2750 1 ]
-"73
-[; ;apllication.c: 73:     gpio_pin_write_logic(&led_4,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_4 `*CS272 . `E2750 1 ]
-"74
-[; ;apllication.c: 74:     gpio_pin_write_logic(&led_5,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_5 `*CS272 . `E2750 1 ]
-"75
-[; ;apllication.c: 75:     gpio_pin_write_logic(&led_6,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_6 `*CS272 . `E2750 1 ]
-"76
-[; ;apllication.c: 76:     gpio_pin_write_logic(&led_7,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_7 `*CS272 . `E2750 1 ]
-"77
-[; ;apllication.c: 77:     gpio_pin_write_logic(&led_8,high);
-[e ( _gpio_pin_write_logic (2 , -> &U _led_8 `*CS272 . `E2750 1 ]
-"78
-[; ;apllication.c: 78: }
-[e :UE 282 ]
+"14
+[; ;apllication.c: 14:     gpio_pin_direction_init(&pin1);
+[e ( _gpio_pin_direction_init (1 -> &U _pin1 `*CS272 ]
+"15
+[; ;apllication.c: 15:     gpio_pin_write_logic(&pin1,high);
+[e ( _gpio_pin_write_logic (2 , -> &U _pin1 `*CS272 . `E2814 1 ]
+"19
+[; ;apllication.c: 19: }
+[e :UE 275 ]
 }

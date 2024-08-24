@@ -16,11 +16,259 @@
 
 
 # 1 "./application.h" 1
-# 10 "./application.h"
+# 12 "./application.h"
 # 1 "./ECU_layer/LED/LED.h" 1
 # 13 "./ECU_layer/LED/LED.h"
 # 1 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h" 1
 # 11 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
+# 18 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 3
+extern const char __xc8_OPTIM_SPEED;
+
+extern double __fpnormalize(double);
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\xc8debug.h" 1 3
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 1 3
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\features.h" 1 3
+# 11 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int wchar_t;
+# 128 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned size_t;
+# 174 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 int24_t;
+# 210 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __uint24 uint24_t;
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
+
+int atoi (const char *);
+long atol (const char *);
+
+long long atoll (const char *);
+
+double atof (const char *);
+
+
+float strtof (const char *restrict, char **restrict);
+double strtod (const char *restrict, char **restrict);
+long double strtold (const char *restrict, char **restrict);
+
+
+
+long strtol (const char *restrict, char **restrict, int);
+unsigned long strtoul (const char *restrict, char **restrict, int);
+
+long long strtoll (const char *restrict, char **restrict, int);
+unsigned long long strtoull (const char *restrict, char **restrict, int);
+
+
+unsigned long __strtoxl(const char * s, char ** endptr, int base, char is_signed);
+
+unsigned long long __strtoxll(const char * s, char ** endptr, int base, char is_signed);
+# 55 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
+int rand (void);
+void srand (unsigned);
+
+void *malloc (size_t);
+void *calloc (size_t, size_t);
+void *realloc (void *, size_t);
+void free (void *);
+
+          void abort (void);
+int atexit (void (*) (void));
+          void exit (int);
+          void _Exit (int);
+
+void *bsearch (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+
+
+
+
+
+
+
+__attribute__((nonreentrant)) void qsort (void *, size_t, size_t, int (*)(const void *, const void *));
+
+int abs (int);
+long labs (long);
+
+long long llabs (long long);
+
+
+typedef struct { int quot, rem; } div_t;
+typedef struct { long quot, rem; } ldiv_t;
+
+typedef struct { long long quot, rem; } lldiv_t;
+
+
+div_t div (int, int);
+ldiv_t ldiv (long, long);
+
+lldiv_t lldiv (long long, long long);
+
+
+typedef struct { unsigned int quot, rem; } udiv_t;
+typedef struct { unsigned long quot, rem; } uldiv_t;
+udiv_t udiv (unsigned int, unsigned int);
+uldiv_t uldiv (unsigned long, unsigned long);
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\xc8debug.h" 2 3
+
+
+
+
+
+
+
+#pragma intrinsic(__builtin_software_breakpoint)
+extern void __builtin_software_breakpoint(void);
+# 23 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\builtins.h" 1 3
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 1 3
+# 26 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 133 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned __int24 uintptr_t;
+# 148 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 intptr_t;
+# 164 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+# 179 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 194 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+# 215 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 235 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 27 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 148 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 149 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdint.h" 2 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\builtins.h" 2 3
+
+
+
+#pragma intrinsic(__nop)
+extern void __nop(void);
+
+#pragma intrinsic(__nopf000)
+extern void __nopf000(void);
+#pragma intrinsic(__nopffff)
+extern void __nopffff(void);
+#pragma intrinsic(__nop0000)
+extern void __nop0000(void);
+
+
+
+#pragma intrinsic(_delay)
+extern __attribute__((nonreentrant)) void _delay(uint32_t);
+#pragma intrinsic(_delaywdt)
+extern __attribute__((nonreentrant)) void _delaywdt(uint32_t);
+
+#pragma intrinsic(_delay3)
+extern __attribute__((nonreentrant)) void _delay3(uint8_t);
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
+# 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18.h" 1 3
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\htc.h" 1 3
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\htc.h" 2 3
+# 6 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18.h" 2 3
+
+
+# 1 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18_chip_select.h" 1 3
+# 369 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18_chip_select.h" 3
 # 1 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\proc\\pic18f4620.h" 1 3
 # 44 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\proc\\pic18f4620.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\__at.h" 1 3
@@ -4233,25 +4481,36 @@ extern volatile __bit nWR __attribute__((address(0x7C21)));
 
 
 extern volatile __bit nWRITE __attribute__((address(0x7E3A)));
+# 370 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18_chip_select.h" 2 3
+# 9 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18.h" 2 3
+# 19 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18.h" 3
+__attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
+__attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
+
+
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\errata.h" 1 3
+# 28 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18.h" 2 3
+# 156 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18.h" 3
+__attribute__((__unsupported__("The " "Read_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) unsigned char Read_b_eep(unsigned int badd);
+__attribute__((__unsupported__("The " "Busy_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Busy_eep(void);
+__attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Write_b_eep(unsigned int badd, unsigned char bdat);
+# 192 "C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\\pic\\include\\pic18.h" 3
+unsigned char __t1rd16on(void);
+unsigned char __t3rd16on(void);
+# 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
 # 11 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h" 2
+
 
 # 1 "./ECU_layer/LED/../../MCAL_layer/GPIO/../mcal_std_types.h" 1
 # 13 "./ECU_layer/LED/../../MCAL_layer/GPIO/../mcal_std_types.h"
 # 1 "./ECU_layer/LED/../../MCAL_layer/GPIO/../std_library.h" 1
 # 13 "./ECU_layer/LED/../../MCAL_layer/GPIO/../std_library.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 1 3
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 5 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 2 3
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\features.h" 1 3
-# 11 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 2 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
 # 12 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
@@ -4261,14 +4520,8 @@ typedef void * va_list[1];
 
 
 typedef void * __isoc_va_list[1];
-# 128 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned size_t;
 # 143 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __int24 ssize_t;
-# 174 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 210 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __uint24 uint24_t;
 # 255 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long off_t;
 # 409 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
@@ -4410,85 +4663,6 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 13 "./ECU_layer/LED/../../MCAL_layer/GPIO/../std_library.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 1 3
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long int wchar_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 2 3
-
-int atoi (const char *);
-long atol (const char *);
-
-long long atoll (const char *);
-
-double atof (const char *);
-
-
-float strtof (const char *restrict, char **restrict);
-double strtod (const char *restrict, char **restrict);
-long double strtold (const char *restrict, char **restrict);
-
-
-
-long strtol (const char *restrict, char **restrict, int);
-unsigned long strtoul (const char *restrict, char **restrict, int);
-
-long long strtoll (const char *restrict, char **restrict, int);
-unsigned long long strtoull (const char *restrict, char **restrict, int);
-
-
-unsigned long __strtoxl(const char * s, char ** endptr, int base, char is_signed);
-
-unsigned long long __strtoxll(const char * s, char ** endptr, int base, char is_signed);
-# 55 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\c99\\stdlib.h" 3
-int rand (void);
-void srand (unsigned);
-
-void *malloc (size_t);
-void *calloc (size_t, size_t);
-void *realloc (void *, size_t);
-void free (void *);
-
-          void abort (void);
-int atexit (void (*) (void));
-          void exit (int);
-          void _Exit (int);
-
-void *bsearch (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
-
-
-
-
-
-
-
-__attribute__((nonreentrant)) void qsort (void *, size_t, size_t, int (*)(const void *, const void *));
-
-int abs (int);
-long labs (long);
-
-long long llabs (long long);
-
-
-typedef struct { int quot, rem; } div_t;
-typedef struct { long quot, rem; } ldiv_t;
-
-typedef struct { long long quot, rem; } lldiv_t;
-
-
-div_t div (int, int);
-ldiv_t ldiv (long, long);
-
-lldiv_t lldiv (long long, long long);
-
-
-typedef struct { unsigned int quot, rem; } udiv_t;
-typedef struct { unsigned long quot, rem; } uldiv_t;
-udiv_t udiv (unsigned int, unsigned int);
-uldiv_t uldiv (unsigned long, unsigned long);
-# 14 "./ECU_layer/LED/../../MCAL_layer/GPIO/../std_library.h" 2
 # 13 "./ECU_layer/LED/../../MCAL_layer/GPIO/../mcal_std_types.h" 2
 
 # 1 "./ECU_layer/LED/../../MCAL_layer/GPIO/../compilers.h" 1
@@ -4502,11 +4676,11 @@ typedef signed char sint8;
 typedef signed short sint16;
 
 typedef uint8 STD_TeturnType;
-# 12 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h" 2
+# 13 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h" 2
 
 # 1 "./ECU_layer/LED/../../MCAL_layer/GPIO/../../MCAL_layer/device_config.h" 1
-# 13 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h" 2
-# 29 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h"
+# 14 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h" 2
+# 30 "./ECU_layer/LED/../../MCAL_layer/GPIO/hal_gpio.h"
 typedef enum
 {
     low = 0,
@@ -4551,10 +4725,10 @@ typedef struct
 
 
 
-STD_TeturnType gpio_pin_direction_init (const Pin_config *_PIN_);
-STD_TeturnType gpio_pin_intialize(const Pin_config *_pin_config);
-STD_TeturnType gpio_get_pin_direction_status(const Pin_config *_PIN_,direction_t *dic_status);
-STD_TeturnType gpio_pin_write_logic(const Pin_config *_PIN_,Logic_t logic);
+STD_TeturnType gpio_pin_direction_init ( const Pin_config*_PIN_);
+STD_TeturnType gpio_pin_intialize( const Pin_config *_pi_config);
+STD_TeturnType gpio_get_pin_direction_status( const Pin_config *_PIN_,direction_t *dic_status);
+STD_TeturnType gpio_pin_write_logic( const Pin_config*_PIN_,Logic_t logic);
 STD_TeturnType gpio_pin_read_logic(const Pin_config *_PIN_,Logic_t *logic);
 STD_TeturnType gpio_pin_toggle_logic(const Pin_config *_PIN_);
 
@@ -4564,80 +4738,83 @@ STD_TeturnType gpio_port_write_logic(PORT_INDEX_T _Port_,uint8 logic);
 STD_TeturnType gpio_port_read_logic(PORT_INDEX_T _Port_,uint8*logic);
 STD_TeturnType gpio_port_toggle_logic(PORT_INDEX_T _Port_);
 # 13 "./ECU_layer/LED/LED.h" 2
-# 10 "./application.h" 2
+
+# 1 "./ECU_layer/LED/LED_CONFIG.h" 1
+# 14 "./ECU_layer/LED/LED.h" 2
+# 26 "./ECU_layer/LED/LED.h"
+typedef enum
+{
+    LED_OFF = 0,
+    LED_ONN
+}LED_STATUS;
+
+typedef struct
+{
+    uint8 PORT_NUM :4 ;
+    uint8 PIN_NUM : 3;
+    uint8 LED_STATUS : 1;
+}LED_T;
+
+
+STD_TeturnType LED_INITIALIZE(LED_T * LED);
+STD_TeturnType LED_ON(LED_T * LED);
+STD_TeturnType LED_OF(LED_T * LED);
+STD_TeturnType LED_Toggle(LED_T * LED);
+# 12 "./application.h" 2
+
+# 1 "./ECU_layer/Button/Button.h" 1
+# 13 "./ECU_layer/Button/Button.h"
+typedef enum
+{
+    Button_pressed = 0,
+    Button_NotPressed
+}Button_State;
+typedef enum
+{
+    Button_Active_low = 0,
+    Button_Active_High
+}Button_Active;
+
+typedef struct
+{
+    Pin_config Button_Pin;
+    Button_State Button_State;
+    Button_Active Button_Activate;
+}Button_t;
+
+
+
+
+
+
+STD_TeturnType Button_INIT(const Button_t*Button);
+
+
+
+
+
+STD_TeturnType Button_Read_State(const Button_t*Button, Button_State *BtnState);
+# 13 "./application.h" 2
+
 
 
 
 void init(void);
 void init2(void);
+void init3(void);
+
+void buttons(void);
+void application_init(void);
+void reading(void);
 # 9 "apllication.c" 2
 
 
-
-Pin_config led_1={.port = PORTC_INDEX, .logic =high , .pin_num= PIN0 ,.direction = Output};
-Pin_config led_2={.port = PORTC_INDEX, .logic =high , .pin_num= PIN1 ,.direction = Output};
-Pin_config led_3={.port = PORTC_INDEX, .logic =high , .pin_num = PIN2 ,.direction = Output};
-Pin_config led_4={.port = PORTC_INDEX, .logic =high , .pin_num = PIN3 ,.direction = Output};
-Pin_config led_5={.port = PORTC_INDEX, .logic =high , .pin_num = PIN4 ,.direction = Output};
-Pin_config led_6={.port = PORTC_INDEX, .logic =high , .pin_num = PIN5 ,.direction = Output};
-Pin_config led_7={.port = PORTC_INDEX, .logic =high , .pin_num = PIN6 ,.direction = Output};
-Pin_config led_8={.port = PORTC_INDEX, .logic =high , .pin_num = PIN7 ,.direction = Output};
-
-Pin_config btn_1 ={.port = PORTD_INDEX, .logic =high, .pin_num = PIN0 ,.direction = input};
-Pin_config btn_2 ={.port = PORTD_INDEX, .logic =high, .pin_num = PIN1 ,.direction = input};
-Logic_t state;
-Logic_t state1;
-STD_TeturnType ret = (STD_TeturnType)0x00;
-uint8 counter = 0;
-int main()
+Pin_config pin1={.direction = Output ,.logic =high ,.pin_num = PIN0 ,.port = PORTC_INDEX};
+void main()
 {
-    gpio_pin_direction_init(&btn_1);
-    gpio_pin_direction_init(&btn_2);
-    while(1)
-    {
-        gpio_pin_read_logic(&btn_1 ,&state);
-        gpio_pin_read_logic(&btn_2 ,&state1);
-        if(state == 1)
-        {
-            init();
-        }
-        else if(state1 == 1)
-        {
-            init2();
-        }
-        else
-        {
-           gpio_port_direction_init(PORTC_INDEX,0xFF);
-        }
-
-    }
+    gpio_pin_direction_init(&pin1);
+    gpio_pin_write_logic(&pin1,high);
 
 
 
-    return (0);
-}
-
-void init(void)
-{
-    gpio_port_direction_init(PORTC_INDEX,0x00);
-    gpio_pin_write_logic(&led_1,high);
-    gpio_pin_write_logic(&led_2,high);
-    gpio_pin_write_logic(&led_3,high);
-    gpio_pin_write_logic(&led_4,high);
-    gpio_pin_write_logic(&led_5,high);
-    gpio_pin_write_logic(&led_6,high);
-    gpio_pin_write_logic(&led_7,high);
-    gpio_pin_write_logic(&led_8,high);
-}
-void init2(void)
-{
-    gpio_port_direction_init(PORTC_INDEX,0xAA);
-    gpio_pin_write_logic(&led_1,high);
-    gpio_pin_write_logic(&led_2,high);
-    gpio_pin_write_logic(&led_3,high);
-    gpio_pin_write_logic(&led_4,high);
-    gpio_pin_write_logic(&led_5,high);
-    gpio_pin_write_logic(&led_6,high);
-    gpio_pin_write_logic(&led_7,high);
-    gpio_pin_write_logic(&led_8,high);
 }

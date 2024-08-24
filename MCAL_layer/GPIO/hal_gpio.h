@@ -8,6 +8,7 @@
 #define	HAL_GPIO_H
 
 /*SECTION : Includes*/
+#include <xc.h> 
 #include"pic18f4620.h"
 #include"../mcal_std_types.h"
 #include"../../MCAL_layer/device_config.h"
@@ -70,10 +71,10 @@ typedef struct
 
 
 /*SECTION : functions declarations */
-STD_TeturnType gpio_pin_direction_init (const Pin_config *_PIN_);
-STD_TeturnType gpio_pin_intialize(const Pin_config *_pin_config);
-STD_TeturnType gpio_get_pin_direction_status(const Pin_config *_PIN_,direction_t *dic_status);
-STD_TeturnType gpio_pin_write_logic(const Pin_config *_PIN_,Logic_t logic);
+STD_TeturnType gpio_pin_direction_init (  const Pin_config*_PIN_);
+STD_TeturnType gpio_pin_intialize( const Pin_config *_pi_config);
+STD_TeturnType gpio_get_pin_direction_status( const Pin_config *_PIN_,direction_t *dic_status);
+STD_TeturnType gpio_pin_write_logic( const Pin_config*_PIN_,Logic_t logic);
 STD_TeturnType gpio_pin_read_logic(const Pin_config *_PIN_,Logic_t *logic);
 STD_TeturnType gpio_pin_toggle_logic(const Pin_config *_PIN_);
 

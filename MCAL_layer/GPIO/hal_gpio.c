@@ -23,13 +23,13 @@ STD_TeturnType gpio_pin_intialize(const Pin_config *_pin_config){
     }
     else
     {
-        ret = gpio_pin_direction_init(&_pin_config);
-        ret = gpio_pin_write_logic(&_pin_config,_pin_config->logic);
+        gpio_pin_direction_init(_pin_config);
+        gpio_pin_write_logic(_pin_config,_pin_config->logic);
     }
     return ret;
 }
 /**
- * @param _PIN_
+ * @param _PI   N_
  * @return 
  */
 STD_TeturnType gpio_pin_direction_init (const Pin_config *_PIN_)
